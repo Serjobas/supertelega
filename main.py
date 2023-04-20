@@ -9,7 +9,7 @@ import archive
 import dm
 import spam
 
-dotenv.load_dotenv()
+
 API_ID = os.getenv("API_ID")
 API_HASH = os.getenv("API_HASH")
 UPDATE_PERIOD = 5  # seconds
