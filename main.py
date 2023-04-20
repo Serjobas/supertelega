@@ -24,6 +24,8 @@ def parse_args():
 
 
 async def main(filter_spam: bool, auto_archive: bool, auto_dm: bool):
+    print(API_ID)
+    print(API_HASH)
     async with sync.TelegramClient("session", API_ID, API_HASH) as client:
         if auto_dm:
             auto_dm = await client.get_entity(auto_dm)
